@@ -1,0 +1,24 @@
+# 12306_tickets
+
+"""
+Train tickets query via python
+
+Usage:
+    ticket[-dgktz] <from> <to> <date>
+Options:
+    -h --help           show this screen
+    -d                  动车
+    -g                  高铁
+    -k                  快速
+    -t                  特快
+    -z                  直达
+"""
+
+from docopt import docopt
+
+def ticket():
+    arguments = docopt(__doc__,version='Ticket 1.0')
+
+if __name__== '__main__':
+    ticket()
+
